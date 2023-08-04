@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter any number
+    <input type="text" id="number" value=""><br><br>
+    Enter first number
+    <input type="text" id="start" value=""><br><br>
+    Enter last number
+    <input type="text" id="end" value="">
+    <p id="table"></p>
+    <button onclick="generate()">Generate</button>
+<script>
+    function generate(){
+        document.getElementById("table").innerHTML=""
+        a = document.getElementById("number").value;
+        b = document.getElementById("start").value;
+        c = document.getElementById("end").value;
+
+        for(i=b;i<=c;i++){
+            var anss = a + " * " + i + " = " + a*i ;
+            document.getElementById("table").innerHTML += anss + "<br>" ; 
+        }
+    }
+</script>
+</body>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{ padding: 0px; margin: 0px;}
+    .a{
+        width: 1000px; height: 150px; background-color: aqua;
+    }
+    .b{
+        float: left;
+        width: 300px; height: 500px; background-color: red;
+    }
+    .c{
+        float: left;
+        width: 700px; height: 500px; background-color: pink;
+    }
+    @media only screen and (max-width: 900px){
+        .a{
+            width: 900px;
+        }
+        .b{
+            width: 250px;
+        }
+        .c{
+            width: 600px;
+        }
+    }
+   @media only screen and (max-width: 700px){
+        .a{
+            width: 700px;
+        }
+        .b{
+            width: 200px;
+        }
+        .c{
+            width: 400px;
+        }
+    }
+    @media only screen and (max-width: 500px){
+        .a{
+            width: 500px;
+        }
+        .b{
+            width: 100px;
+        }
+        .c{
+            width: 200px;
+        }
+    }
+</style>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "d1a04414-e193-44d6-a196-ffff0e524670",
+		"name": "b230daveit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "23-3-23",
+			"item": [
+				{
+					"name": "First Rest Post API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/about",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"about"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sum",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/sum?one=100&two=200",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sum"
+							],
+							"query": [
+								{
+									"key": "one",
+									"value": "100"
+								},
+								{
+									"key": "two",
+									"value": "200"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sum with Param",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/sum2/10012345",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"sum2",
+								"10012345"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Post Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "one",
+									"value": "100",
+									"type": "default"
+								},
+								{
+									"key": "two",
+									"value": "200",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3001/getValue",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"getValue"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "25-3-23",
+			"item": [
+				{
+					"name": "All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3001/admin/allusers",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"allusers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Bagga Ji",
+									"type": "default"
+								},
+								{
+									"key": "age",
+									"value": "22",
+									"type": "default"
+								},
+								{
+									"key": "phone",
+									"value": "998877",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3001/admin/addUser",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"admin",
+								"addUser"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

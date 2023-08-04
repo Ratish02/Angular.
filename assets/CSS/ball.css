@@ -1,0 +1,33 @@
+.a{
+    width: 50%;
+    float: left;
+    position: relative;
+    animation: ball1 4s infinite;
+}
+
+.b{
+    width: 50%;
+    float: left;
+    position: relative;
+    animation: ball2 4s infinite;
+}
+
+@keyframes ball1{
+    from{
+        top: 0px; left: 0px;
+    }
+    to{
+        top: 0px; left: 500px;
+    
+    }
+}
+
+@keyframes ball2{
+    from{
+        top: 0px; left:500px;
+    }
+    to{
+        top: 0px; left: 0px;
+    
+    }
+}

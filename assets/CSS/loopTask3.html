@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter number
+    <input type="text" id="number" value=""><br><br>
+    Enter Width
+    <input type="text" id="width" value=""><br><br>
+    Enter Height
+    <input type="text" id="height" value=""><br><br>
+    Enter Margin
+    <input type="text" id="margin" value=""><br><br>
+    Enter Colour
+    <input type="text" id="colour" value=""><br><br>
+     <p id="table"></p>
+    <button onclick="generate()">Generate</button>
+    <div style="background-color: aqua;" id="divi"></div>
+<script>
+    function generate(){
+        document.getElementById("table").innerHTML=""
+    }
+</script>
+</body>

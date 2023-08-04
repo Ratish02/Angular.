@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #divi{
+		width:200px; 
+		height:200px; 
+		background-color:blue;
+        border-radius: 10px;
+	}
+</style>
+<script>
+    function a(){
+        x = document.getElementById("txt").value;
+        document.getElementById("divi").style.height=x+"px";
+    }
+    function b(){
+        y = document.getElementById("txt").value;
+        document.getElementById("divi").style.width=y+"px";
+    }
+    function c(){
+        z = document.getElementById("txt").value;
+        document.getElementById("divi").style.height=z+"px";
+        document.getElementById("divi").style.width=z+"px";
+    }
+    function d(){
+        r = document.getElementById("txt").value;
+        document.getElementById("divi").style.borderRadius=r+"px";
+    }
+</script>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter Value">
+    <button onclick="a()">Height</button>
+    <button onclick="b()">Width</button>
+    <button onclick="c()">Both</button>
+    <button onclick="d()">BorderRadius</button>
+    <br><br>
+    <div id="divi"></div>
+</body>
+</html>

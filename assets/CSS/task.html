@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f1(){
+            a = document.getElementById("text1").value;
+            b = document.getElementById("text2").value=a;
+        }
+        function f2(){
+           a = document.getElementById("text1").value=""
+           b = document.getElementById("text2").value=a;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter Text" value=""id="text1">
+    <input type="text" value="" placeholder="" id="text2">
+    <button onclick="f1()">Show</button>
+    <button onclick="f2()">Clear</button>
+</body>
+</html>
